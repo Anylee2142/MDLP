@@ -1,4 +1,4 @@
-# MDLP
+# Outlines
 1. Implementation of MDLP (http://yaroslavvb.com/papers/fayyad-discretization.pdf)
   > Works `sklearn` way
 2. Supervised discretization using `target`, `Entropy`
