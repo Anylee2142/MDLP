@@ -11,7 +11,7 @@ mdlp.fit_transform(X)
 ```
 
 # Concept
-= Pick hypothesis that minimize length(P(H)) + length(P(H|T))  
+= Pick hypothesis that minimize `length(P(H)) + length(P(H|T))`
 = In this paper, length is measured by `Entropy`  
 = When it comes to choose cutpoints, pick ones that minimize `Entropy`  
 
