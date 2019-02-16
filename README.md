@@ -9,10 +9,10 @@ mdlp.fit_transform(X)
 ```
 
 # Concept
-= Pick hypothesis that minimize length(P(H)) + length(P(H|T))
-= In this paper, length is measured by `Entropy`
-= When it comes to choose cutpoints, pick ones that minimize `Entropy`
+= Pick hypothesis that minimize length(P(H)) + length(P(H|T))  
+= In this paper, length is measured by `Entropy`  
+= When it comes to choose cutpoints, pick ones that minimize `Entropy`  
 
 # Pros & Cons
-Pros = Discretization is done related with target information
-Cons = If features are correlated, discretized features can be redundant
+Pros = Discretization is done related with target information  
+Cons = If features are correlated, discretized features can be redundant  
