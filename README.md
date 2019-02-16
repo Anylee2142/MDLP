@@ -1,6 +1,6 @@
 # MDLP
 Implementation of MDLP (http://yaroslavvb.com/papers/fayyad-discretization.pdf)  
-Works sklearn-ish way
+Works `sklearn`-ish way
 
 ```python
 from discretization.mdlp import *
