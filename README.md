@@ -1,6 +1,6 @@
 # MDLP
 1. Implementation of MDLP (http://yaroslavvb.com/papers/fayyad-discretization.pdf)
-  - Works `sklearn` way
+  > Works `sklearn` way
 2. Supervised discretization using target, entropy
 3. Can be configured to multiprocess (`n_jobs`)
 
