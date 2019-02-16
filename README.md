@@ -16,3 +16,6 @@ mdlp.fit_transform(X)
 # Pros & Cons
 Pros = Discretization is done related with target information  
 Cons = If features are correlated, discretized features can be redundant  
+
+TODO  
+- dataset to s3
