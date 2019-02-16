@@ -19,5 +19,10 @@ mdlp.fit_transform(X)
 Pros = Discretization is done related with target information which leads to performance  
 Cons = If features are correlated, discretized features can be redundant (Needs of `feature selection`)
 
+# References
+- Multi-Interval Discretization of Continuous-Valued Attributes for Classification Learning (http://yaroslavvb.com/papers/fayyad-discretization.pdf)
+- Discretization: An Enabling Technique (https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading03/liu_dmkd02.pdf)
+- Minimum Description Length Principle (https://www.cs.helsinki.fi/u/ttonteri/pub/roosmdlencyc2016.pdf)
+
 TODO  
 - dataset to s3
