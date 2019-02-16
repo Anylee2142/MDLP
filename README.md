@@ -16,8 +16,8 @@ mdlp.fit_transform(X)
 = When it comes to choose cutpoints, pick ones that minimize `Entropy`  
 
 # Pros & Cons
-Pros = Discretization is done related with target information  
-Cons = If features are correlated, discretized features can be redundant  
+Pros = Discretization is done related with target information which leads to performance
+Cons = If features are correlated, discretized features can be redundant (Needs of `feature selection`)
 
 TODO  
 - dataset to s3
