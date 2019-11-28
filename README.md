@@ -8,10 +8,10 @@ The paper suggests one of discretization methods (broader concept of binning).
 - `length` is measured by `Entropy`
 - and it also uses target information
 
-You can refer to below formulas for more details.
+You can refer to below formulas for more details.  
 ![formula_1](/assets/5.png)
 ![formula_2](/assets/4.png)
-![formula_3](/assets/3.png)
+![formula_3](/assets/3.png)  
 ![formula_4](/assets/2.png)
 ![formula_5](/assets/1.png)
 
