@@ -34,7 +34,7 @@ Pros = Discretization is done related with target information which leads to per
 Cons = If features are correlated, discretized features can be redundant (Needs of `feature selection`)
 
 # Results
-= You can check the results in the notebook files. Model performances are improved in most cases.
+> You can check the results in the notebook files. Model performances are improved in most cases.
 
 # References
 - Multi-Interval Discretization of Continuous-Valued Attributes for Classification Learning (http://yaroslavvb.com/papers/fayyad-discretization.pdf)

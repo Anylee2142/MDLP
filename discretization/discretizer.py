@@ -1,5 +1,5 @@
 import numpy as np
-import pandas as pd
+import modin.pandas as pd
 
 from abc import *
 from typing import Tuple, List, Dict, Any
@@ -20,7 +20,7 @@ def _queue_get(queue:mp.Queue) -> List[Dict[str, float]]:
     return result
 
 class Discretizer(BaseEstimator, TransformerMixin, metaclass=ABCMeta):
-    def __init__(self, con_features: List[str], max_cutpoints=3, n_jobs=1):
+    def __init__(self, con_features: List[str], max_cutpoints=3, n_jobs=1, is_modin=True):
         self.con_features = con_features
         self.max_cutpoints = max_cutpoints
         self.cutpoints = dict()

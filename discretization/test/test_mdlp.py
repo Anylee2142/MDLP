@@ -1,17 +1,15 @@
-from discretization.mdlp import *
+from discretization import ent, MDLP
 
 import unittest
-import time
 
 import numpy as np
-import pandas as pd
+import modin.pandas as pd
 from pandas.util import testing as pdt
 import multiprocessing as mp
 
 from sklearn.datasets import load_iris
 
 from scipy.stats import entropy
-
 
 class TestMDLP(unittest.TestCase):
     # TODO: root path <-> system path
@@ -34,7 +32,7 @@ class TestMDLP(unittest.TestCase):
         target = pd.Series(data=data['target'], name='target')
         features_copy = features.copy()
 
-        mdlp = MDLP(con_features=features.columns, base=2, max_cutpoints=3)
+        mdlp = MDLP(con_features=list(features.columns), base=2, max_cutpoints=3)
         mdlp.fit_transform(X=features, y=target)
 
         pdt.assert_frame_equal(features_copy, features)

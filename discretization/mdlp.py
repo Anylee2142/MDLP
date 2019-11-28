@@ -1,7 +1,7 @@
 import numpy as np
-import pandas as pd
+import modin.pandas as pd
 from typing import Tuple, List, Dict
-from discretization.discretizer import Discretizer
+from .discretizer import Discretizer
 
 def log_(v, base=2) -> float:
     return np.log(v) / np.log(base)
@@ -106,16 +106,25 @@ def N_1(feature, base=2) -> float:
     return log_(v=N-1, base=base) / N
 
 class MDLP(Discretizer):
-    def __init__(self, con_features:List[str], base=2, max_cutpoints=3, n_jobs=1):
+    def __init__(self, con_features: List[str], base=2, max_cutpoints=3, n_jobs=1, is_modin=True):
         assert base > 0, 'base of logarithm should be bigger than 0'
         assert base != 1, 'base of logarithm should not be 1'
+        assert isinstance(con_features, list), '`con_features` should be list'
 
-        Discretizer.__init__(
-            self=self,
+        super().__init__(
             con_features=con_features,
             max_cutpoints=max_cutpoints,
-            n_jobs=n_jobs
+            n_jobs=n_jobs,
+            is_modin=is_modin
         )
+
+        # Discretizer.__init__(
+        #     self=self,
+        #     con_features=con_features,
+        #     max_cutpoints=max_cutpoints,
+        #     n_jobs=n_jobs,
+        #     is_modin=is_modin
+        # )
 
         self.base = base
 
