@@ -9,6 +9,7 @@ The paper suggests one of discretization methods (broader concept of binning).
 - and it also uses target information
 
 You can refer to below formulas for more details.  
+
 ![formula_1](/assets/5.png)
 
 ![formula_2](/assets/4.png)   
