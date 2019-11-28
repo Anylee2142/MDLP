@@ -1,5 +1,5 @@
 # Outlines
-- Implementation of MDLP (http://yaroslavvb.com/papers/fayyad-discretization.pdf)
+> Implementation of MDLP (http://yaroslavvb.com/papers/fayyad-discretization.pdf)
 
 The paper suggests one of discretization methods (broader concept of binning).
 1. Its purpose is to get cutpoints which converts numerical columns into categorical ones.
