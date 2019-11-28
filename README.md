@@ -1,7 +1,7 @@
 # Outlines
 - Implementation of MDLP (http://yaroslavvb.com/papers/fayyad-discretization.pdf)
 
-The paper suggests one method of discretizations (broader concept of binning).
+The paper suggests one of discretization methods (broader concept of binning).
 1. Its purpose is to get cutpoints which converts numerical columns into categorical ones.
 2. To get the cutpoints, its hypothesis assumes `Occam's razor`, which states that selecting simpler, shorter hypothesis(`length`) is desirable.
 3. This leads to minimizes statistics calculated from a numerical column: `length(P(H)) + length(P(H|T))`.
