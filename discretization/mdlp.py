@@ -1,5 +1,5 @@
 import numpy as np
-import modin.pandas as pd
+import pandas as pd
 from typing import Tuple, List, Dict
 from .discretizer import Discretizer
 
