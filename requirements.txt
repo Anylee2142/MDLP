@@ -3,7 +3,7 @@ Click==7.0
 cloudpickle==1.2.2
 colorama==0.4.1
 dask==2.8.1
-distributed==2.8.1
+distributed==2021.10.0
 filelock==3.0.12
 funcsigs==1.0.2
 HeapDict==1.0.1
